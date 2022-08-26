@@ -9,9 +9,6 @@ db = pymysql.connect(host='127.0.0.1',
 # 使用cursor()方法获取操作游标
 cursor = db.cursor()
 
-# 使用execute方法执行SQL语句
-cursor.execute('SELECT VERSION()')
-sql = 'select * from Student'
 token = '' #填写Bearer Token
 for i in range(475029):
     kw = {'uid': i+1011}
