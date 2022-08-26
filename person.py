@@ -12,13 +12,14 @@ cursor = db.cursor()
 # 使用execute方法执行SQL语句
 cursor.execute('SELECT VERSION()')
 sql = 'select * from Student'
+token = '' #填写Bearer Token
 for i in range(475029):
     kw = {'uid': i+1011}
     # 设置请求头
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36",
         "Content-Type": "application/json; charset=utf-8",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ6ZW1jaG8iLCJhdWQiOiIiLCJleHAiOjE2NjE1Mjc1MTcsImRhdGEiOnsidWlkIjoxMTE4NTY3N319.lPCIFj8MjtDGvXURU730lXBiW4nWpfMlsVr8k7vQNdc"
+        "Authorization": f"{token}"
     }
     # params 接收一个字典或者字符串的查询参数，字典类型自动转换为url编码，不需要urlencode()
     response = requests.get(
