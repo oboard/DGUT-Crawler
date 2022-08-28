@@ -21,21 +21,9 @@ str = """
                 "avatar": "http://113.105.128.165:10001/uploads/cas_encrypt_head/default.jpg"
             },
         ],
-        "total": 23113,
+        "total": 1,
         "self": {
-            "uid": 175029,
-            "type": 1,
-            "stage": 6,
-            "faculty_id": 338,
-            "class_id": 0,
-            "name": "罗宇航",
-            "username": "2022433080122",
-            "status": 1,
-            "phone": "",
-            "short_phone": "",
-            "office_phone": "",
-            "abbr": "L",
-            "avatar": "http://113.105.128.165:10001/uploads/cas_encrypt_head/default.jpg"
+            
         }
     }
 }
